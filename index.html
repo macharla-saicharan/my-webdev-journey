@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyNotes Project</title>
+  <!--below code was obtained  from bootstrap , it was a css link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+      @media screen and (max-width:600px){
+        #heading{
+          box-sizing: border-box;
+          border-radius: 5px;
+          padding: 4px;
+          text-align: center;
+          margin-bottom: 10px;
+          background-color: aqua;
+          border: 2px solid black;
+          /* width:98vw; */
+          font-size: 5vw;
+        }
+          #savedNotes{
+            text-align: center;
+          }
+
+        }
+      
+      
+      
+    </style>
+</head>
+
+<body>
+
+  <!--Below was the code obtained from bootstrap to create simple Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MyNotes </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--Below div tag of class "container" was created to write custom code . The class name must be 
+      "container" becoz the content inside it will get css styling of bootstrap-->
+
+  <div class="container my-3">
+    <h3 id="heading">&#128203; Welcome to MyNotes Website  </h3>
+    <!--&#128203 is a code used to create a note emoji-->
+    <!--Below code was obtained from bootstrap's card section to create a card -->
+    <div class="card">
+      <div class="card-body">
+        
+        <h5 class="card-title">Add a Title </h5>
+        <div class="form-group">
+          <textarea class="form-control" id="addTitle" rows="1" placeholder="Enter title"></textarea>
+        </div>
+        
+        <h5 class="card-title">Add a note &#9196;</h5>
+        <div class="form-group">
+          <textarea class="form-control" id="addTxt" rows="3" placeholder="Enter content"></textarea>
+        </div>
+        <button class="btn btn-primary" id="addBtn">Add Note</button>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <!--This tag was used to create a horizontal line -->
+    <h3 id="savedNotes">Saved Notes &#128203;</h3>
+
+    <div id="notes" class="row container-fluid"></div>
+  </div>
+
+
+
+
+
+  <!--Below are the javascript codes copied from bootstrap-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!--Below was the js file which we created -->
+  <script src="project.js"></script>
+</body>
+
+
+</html>
