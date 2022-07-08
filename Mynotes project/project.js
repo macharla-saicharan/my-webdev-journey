@@ -53,11 +53,7 @@ addBtn.addEventListener("click", function (e) {
     showNotes();
 
 })
-// function savingDate(){
-//     let date = new Date().toDateString;
-//     return date;
-//     console.log(date);
-// }
+
 
 function showNotes() {
 
