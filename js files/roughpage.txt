@@ -1,0 +1,3 @@
+My news Project's api key is (933c554505ce415e9a3026fd75f977c5).
+
+This api was downloaded from www.newsapi.org.
